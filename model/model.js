@@ -2,13 +2,11 @@ import { MongoClient, ObjectId } from "mongodb"
 import dotenv from "dotenv"
 dotenv.config()
 
-const user = process.env.DB_USER
-const password = process.env.DB_PASSWORD
-const cluster = process.env.DB_CLUSTER
-const databaseName = 'todo2509'
+const user = process.env.MONGODB_USER
+const password = process.env.MONGODB_PASSWORD
+const databaseName = 'todo2511'
 
-
-const mongoUrl = `mongodb+srv://${user}:${password}@${cluster}`
+const mongoUrl = `mongodb+srv://${user}:${password}@node.ccuubg4.mongodb.net/?appName=Node`
 
 let client
 
